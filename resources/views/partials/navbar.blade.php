@@ -11,7 +11,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Request::path() == 'attribute' ? 'active' : '' }}"
-                            href="">Data Penyakit</a>
+                            href="{{route('penyakit.index')}}">Data Penyakit</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Request::path() == 'dataset' ? 'active' : '' }}"
