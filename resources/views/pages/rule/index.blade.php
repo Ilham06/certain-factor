@@ -3,10 +3,10 @@
 @section('content')
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">Certain Factor (CF)</h5>
+            <h5 class="card-title">Rule Diagnosa</h5>
             <p class="card-description">
-                Certain Factor menunjukkan seberapa yakin gejala tertentu berhubungan dengan penyakit tertentu. Nilai CF
-                ditentukan berdasarkan pengetahuan atau data ahli veteriner.
+                Eksplorasi hubungan antara gejala dan penyakit yang didukung oleh sistem pakar. <br>
+                Lihat nilai Certain Factor (CF) untuk setiap rule, yang menunjukkan tingkat keyakinan pakar terhadap diagnosa yang dihasilkan.
             </p>
             <x-alert-success />
             <div class="">

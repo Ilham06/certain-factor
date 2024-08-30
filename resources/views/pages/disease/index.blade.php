@@ -5,8 +5,8 @@
         <div class="card-body">
             <h5 class="card-title">Data Penyakit</h5>
             <p class="card-description">
-                Halaman ini berisi daftar penyakit yang mungkin diderita oleh subjek berdasarkan gejala yang
-                teridentifikasi.
+                Kelola daftar penyakit dengan mudah dan efisien. Tambah, perbarui, <br> dan hapus data penyakit untuk memastikan
+                informasi diagnosa selalu akurat dan up-to-date.
             </p>
             <div class="d-flex justify-content-between align-items-center">
                 <div class="">
@@ -35,18 +35,20 @@
                                 <td>{{ $disease->code }}</td>
                                 <td>{{ $disease->name }}</td>
                                 <td>{{ $disease->deskripsi }}</td>
-                                <td class="d-flex gap-2"><a href="{{ route('penyakit.edit', $disease->id) }}"><button class="btn btn-light btn-sm">Edit</button></a>
-                                    <form action="{{route('penyakit.destroy', $disease->id)}}" method="post">
+                                <td class="d-flex gap-2"><a href="{{ route('penyakit.edit', $disease->id) }}"><button
+                                            class="btn btn-light btn-sm">Edit</button></a>
+                                    <form action="{{ route('penyakit.destroy', $disease->id) }}" method="post">
                                         @method('delete')
                                         @csrf
-                                        <button onclick="return confirm('apakah anda ingin menghapus data?')" type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                        <button onclick="return confirm('apakah anda ingin menghapus data?')" type="submit"
+                                            class="btn btn-sm btn-danger">Hapus</button>
                                     </form>
                                 </td>
                             </tr>
                         @empty
-                        <tr>
-                            <td colspan="5" class="text-center">tidak ada data</td>
-                        </tr>
+                            <tr>
+                                <td colspan="5" class="text-center">tidak ada data</td>
+                            </tr>
                         @endforelse
                     </tbody>
                 </table>

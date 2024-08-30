@@ -7,13 +7,13 @@
                 <div class="card-body">
                     <h5 class="card-title">Edit data gejala</h5>
                     <p class="card-description">
-                        Form edit data gejala
+                        Perbarui data gejala dengan informasi terbaru untuk memastikan akurasi sistem pakar. Tambahkan detail baru atau revisi informasi yang ada untuk diagnosis yang lebih tepat.
                     </p>
                     <form action="{{ route('gejala.update', $symptom->id) }}" method="POST">
                         @method('put')
                         @csrf
                         <div class="mb-3">
-                            <label for="code" class="form-label">Kode</label>
+                            <label for="code" class="form-label">Kode Gejala</label>
                             <input name="code" value="{{ $symptom->code }}" type="text"
                                 class="form-control @error('code') is-invalid @enderror" id="code" />
                             @error('code')
@@ -23,7 +23,7 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label">Nama</label>
+                            <label for="name" class="form-label">Nama Gejala</label>
                             <input name="name" value="{{ $symptom->name }}" type="text"
                                 class="form-control @error('name') is-invalid @enderror" id="name" />
                             @error('name')
@@ -33,7 +33,7 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label>Deskripsi</label>
+                            <label class="form-label">Deskripsi</label>
                             <textarea class="form-control" name="deskripsi" id="" rows="5">
                             {{ $symptom->deskripsi }}
                            </textarea>

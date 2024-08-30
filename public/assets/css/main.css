@@ -1141,7 +1141,8 @@ body.sidebar-hidden .main-wrapper {
 .card-title {
     font-size: 18px;
     color: #5b5b5b;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .card-body {
@@ -1149,7 +1150,7 @@ body.sidebar-hidden .main-wrapper {
 }
 
 .card-description {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .card-img, .card-img-top {
@@ -2159,6 +2160,10 @@ body.modal-open {
     padding: 15px 20px!important;
     font-weight: normal;
     vertical-align: middle;
+}
+
+.table th {
+    font-weight: 500;
 }
 
 .table tbody tr:last-child td,

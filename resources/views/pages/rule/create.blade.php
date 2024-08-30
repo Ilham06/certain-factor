@@ -7,8 +7,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Buat Rule untuk flue kucing</h5>
                     <p class="card-description">
-                        Form untuk membuat rule pada setiap penyakit. centang pada gejala yang bersangkutan, lalu input
-                        nilai kepercayaan (CF)
+                        Sesuaikan rule diagnosa berdasarkan informasi terkini dan pengalaman medis. Perbarui hubungan antara
+                        gejala dan penyakit, serta atur ulang nilai Certain Factor (CF) untuk memastikan sistem pakar selalu
+                        memberikan diagnosa yang akurat dan dapat dipercaya.
                     </p>
                     <form action="{{ route('rule.store') }}" method="POST">
                         @csrf
@@ -21,12 +22,14 @@
                                         <div class="col-5">
                                             <select name="cf[{{ $symptom->id }}][value]" class="form-select">
                                                 @foreach (config('general.cf_term') as $key => $term)
-                                                    <option @selected($symptom->disease && ($term == $symptom->disease->cf_rule)) value="{{ $term }}">{{ $key }}</option>
+                                                    <option @selected($symptom->disease && $term == $symptom->disease->cf_rule) value="{{ $term }}">
+                                                        {{ $key }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
-                                        <div class="col-3"><input @checked($symptom->disease) name="cf[{{ $symptom->id }}][is_check]"
-                                                class="form-check-input" type="checkbox" id="">
+                                        <div class="col-3"><input @checked($symptom->disease)
+                                                name="cf[{{ $symptom->id }}][is_check]" class="form-check-input"
+                                                type="checkbox" id="">
 
                                         </div>
                                     </div>

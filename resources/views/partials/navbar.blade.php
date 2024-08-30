@@ -21,11 +21,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Request::path() == 'result' ? 'active' : '' }}"
-                            href="">Perhitungan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ Request::path() == 'result' ? 'active' : '' }}"
-                            href="">Pengaturan</a>
+                            href="">Diagnosa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Request::path() == 'user' ? 'active' : '' }}" href="">Pengguna</a>

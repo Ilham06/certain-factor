@@ -5,8 +5,7 @@
         <div class="card-body">
             <h5 class="card-title">Data Gejala</h5>
             <p class="card-description">
-                Halaman ini berisi daftar Gejala yang mungkin diderita oleh subjek berdasarkan gejala yang
-                teridentifikasi.
+                Kelola data gejala secara efektif untuk mendukung diagnosa yang akurat. <br> Tambah, lihat, perbarui, atau hapus informasi gejala untuk memastikan sistem pakar selalu diperbarui dengan informasi terbaru.
             </p>
             <div class="d-flex justify-content-between align-items-center">
                 <div class="">
