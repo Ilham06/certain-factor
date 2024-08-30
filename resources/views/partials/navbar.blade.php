@@ -17,7 +17,7 @@
                             href="{{ route('gejala.index') }}">Data Gejala</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::path() == 'result' ? 'active' : '' }}" href="">Rules</a>
+                        <a class="nav-link {{ Request::path() == 'result' ? 'active' : '' }}" href="{{route('rule.index')}}">Rules</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Request::path() == 'result' ? 'active' : '' }}"
