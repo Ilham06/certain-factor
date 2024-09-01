@@ -1,7 +1,7 @@
 <div class="page-header">
     <nav class="navbar navbar-expand-lg d-flex justify-content-between">
         <div class="container">
-            <div class="fw-bold text-primary">Certain Factor</div>
+            {{-- <div class="fw-bold text-primary">Certain Factor</div> --}}
 
             <div class="" id="navbarNav">
                 <ul class="navbar-nav" id="leftNav">
@@ -9,19 +9,19 @@
                         <a class="nav-link {{ Request::path() == '/' ? 'active' : '' }}" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::path() == 'attribute' ? 'active' : '' }}"
+                        <a class="nav-link {{ Request::path() == 'penyakit' ? 'active' : '' }}"
                             href="{{ route('penyakit.index') }}">Data Penyakit</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::path() == 'dataset' ? 'active' : '' }}"
+                        <a class="nav-link {{ Request::path() == 'gejala' ? 'active' : '' }}"
                             href="{{ route('gejala.index') }}">Data Gejala</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::path() == 'result' ? 'active' : '' }}" href="{{route('rule.index')}}">Rules</a>
+                        <a class="nav-link {{ Request::path() == 'rule' ? 'active' : '' }}" href="{{route('rule.index')}}">Basis Pengetahuan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::path() == 'result' ? 'active' : '' }}"
-                            href="">Diagnosa</a>
+                        <a class="nav-link {{ Request::path() == 'diagnosa' ? 'active' : '' }}"
+                            href="{{route('diagnosa')}}">Diagnosa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Request::path() == 'user' ? 'active' : '' }}" href="">Pengguna</a>

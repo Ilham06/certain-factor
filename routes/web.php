@@ -5,13 +5,9 @@ use App\Http\Controllers\RuleController;
 use App\Http\Controllers\SymptomController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('penyakit', DiseaseController::class);
 
@@ -25,3 +21,5 @@ Route::delete('gejala/{symptom}', [SymptomController::class, 'destroy'])->name('
 Route::get('rule', [RuleController::class, 'index'])->name('rule.index');
 Route::get('rule/{id}', [RuleController::class, 'create'])->name('rule.create');
 Route::post('rule', [RuleController::class, 'store'])->name('rule.store');
+Route::get('diagnosa', [RuleController::class, 'diagnosa'])->name('diagnosa');
+Route::post('diagnosa/process', [RuleController::class, 'process'])->name('diagnosa.process');
