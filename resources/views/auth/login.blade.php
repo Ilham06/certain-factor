@@ -48,6 +48,11 @@
                                 <button type="submit" class="btn btn-info m-b-xs">Masuk</button>
                             </div>
                         </form>
+                        <p class="mt-2">silahkan login menggunakan akun demo :</p>
+                        <ul>
+                            <li>email : demouser1@mail.com</li>
+                            <li>password : passworddemo</li>
+                        </ul>
                     </div>
                 </div>
             </div>
