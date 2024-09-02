@@ -5,6 +5,7 @@
         <div class="col-lg-6">
             <div class="card">
                 <div class="card-body">
+                    <x-alert-success />
                     <h5 class="card-title">Buat Rule untuk flue kucing</h5>
                     <p class="card-description">
                         Sesuaikan rule diagnosa berdasarkan informasi terkini dan pengalaman medis. Perbarui hubungan antara

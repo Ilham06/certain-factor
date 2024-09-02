@@ -24,7 +24,7 @@
                             href="{{route('diagnosa')}}">Diagnosa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::path() == 'user' ? 'active' : '' }}" href="">Pengguna</a>
+                        <a class="nav-link {{ Request::path() == 'user' ? 'active' : '' }}" href="{{route('user.index')}}">Pengguna</a>
                     </li>
                 </ul>
             </div>
