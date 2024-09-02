@@ -1,6 +1,7 @@
 <?php
 
 return [
+   'phone' => env('phone', '85876679856'),
    'cf_term' => [
       'Tidak' => 0,
       'Kemungkinan Tidak' => 0.2,
