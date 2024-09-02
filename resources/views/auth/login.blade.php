@@ -6,7 +6,7 @@
 
             <div class="col-md-12 col-lg-4">
                 <h4 class="fw-bold text-center mb-2 text-primary">Sistem Pakar </h4>
-                <h4 class="fw-bold text-center mb-5 text-primary">Certain Factor</h4>
+                <h4 class="fw-bold text-center mb-5 text-primary">Diagnosa Penyakit</h4>
                 <div class="card login-box-container">
                     <div class="card-body">
                         <div class="authent-text">
